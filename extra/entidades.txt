@@ -1,0 +1,64 @@
+PAREI O VÌDEO EM 35 minutos
+
+- usuarios -OK
+{
+    *matricula,
+     nome,
+     função,
+     perfil,
+     senha
+}
+
+- serviços -OK
+{
+    *ordem_servico
+     descricao
+     disciplina
+     inicio
+     termino_previsto
+     termino_real
+     localidade
+     dia_util
+     tipo_MO
+     area_restrita
+}
+
+- permissão de trabalho -OK
+{
+    *id
+    +id_servico
+     status
+}
+
+- profissionais pt -OK
+{
+    +id_pt
+    +id_usuario
+     ciente_usuario
+     data_ciente
+     obs_usuario
+}
+
+-riscos
+{
+    +id_servico
+     descricao_risco
+}
+
+-perigos
+{
+    +id_servico
+     descricao_perigo
+}
+
+-epi
+{
+    +id_servico
+     descricao_epi
+}
+
+-medidas_preventivas
+{
+    +id_servico
+     medida_preventiva
+}

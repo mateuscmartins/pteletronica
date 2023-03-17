@@ -1,0 +1,25 @@
+perfis: adm, tec_manutenção, prof_SST, fiscal
+
+adm:
+- login
+- cadastrar novos usuários
+
+tec_manutenção:
+- login
+- verificar lista de pts associadas a ele
+- verificar uma pt específica
+- dar ciência
+- marcar que serviço foi concluído
+
+prof_sst:
+- login
+- criar pt
+- cancelar pt
+- verificar lista de todas as pts
+- verificar uma pt específica
+
+fiscal:
+- login
+- verificar lista de todas as pts
+- filtar lista de pts por disciplina
+- verificar uma pt específica
