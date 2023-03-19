@@ -14,7 +14,7 @@ const routes = express.Router();
 routes.post('/sessao', SessaoController.create);
 
 //Rota para cadastro de um novo usuário no banco de dados
-routes.post('/suarios', UsuariosController.create);
+routes.post('/usuarios', UsuariosController.create);
 //Rota para retornar todos os usuários
 routes.get('/usuarios', UsuariosController.index);
 //Rota para excluit usuário do banco de dados
