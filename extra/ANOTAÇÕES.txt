@@ -7,4 +7,4 @@ em 1H e 25 min tem exemplo para paginação da lista de PTs
 em 1H e 31 tem exemplo de JOIN no knex
 
 
-FRONTEND - Parei em 46 min
+FRONTEND - Parei em 1HH 09MM

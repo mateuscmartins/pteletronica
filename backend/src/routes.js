@@ -15,11 +15,14 @@ routes.post('/sessao', SessaoController.create);
 
 //Rota para cadastro de um novo usuário no banco de dados
 routes.post('/usuarios', UsuariosController.create);
+
 //Rota para retornar todos os usuários
 routes.get('/usuarios', UsuariosController.index);
-//Rota para excluit usuário do banco de dados
+
+//Rota para excluir usuário do banco de dados
 routes.delete('/usuarios/:matricula', UsuariosController.delete)
 
+//Rota para criação de nova Permissão de Trabalho
 routes.post('/permissao_trabalho', PTController.create);
 
 

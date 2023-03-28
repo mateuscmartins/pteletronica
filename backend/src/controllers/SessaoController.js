@@ -15,7 +15,8 @@ module.exports = {
             })
             .select('nome', 'perfil')
             .first();   
-
+        
+        //Verificando se o usuário existe e retornando status 400 caso não exista
         if(!usuario){
             return response.status(400).json({ error: "Usuário não encontrado" });
         }
