@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    max-width: 1810px;
+    padding: 0 20px;
+    margin: 30px auto;
+}
+
+.container header{
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 25px;
+}
+
+.conteudo-esquerda{
+    margin-left: 10px;
+}
+
+.conteudo-direita{
+    margin-right: 10px;
+}
+
+.legenda{
+    display: block;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.secao-dividida{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
