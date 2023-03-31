@@ -10,11 +10,19 @@
     align-items: center;
 }
 
+.container header .links{
+    margin-left: auto;
+}
+
 .content {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 25px;
+}
+
+h2{
+    margin-top: 20px;
 }
 
 .conteudo-esquerda{
@@ -34,4 +42,45 @@
 .secao-dividida{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+input[type=text] {
+    width: 70%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0 8px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 70%;
+    height: 120px;
+    color: #333;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 8px 8px;
+    margin-bottom: 5px;
+    resize: none;
+}
+
+input[type="date"]{
+    height: 40px;
+    color: #333;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#riscos{
+    padding-top: 25px;
+}
+
+#riscos label{
+    font-size: 24px;
+}
+
+#riscos input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
 }
