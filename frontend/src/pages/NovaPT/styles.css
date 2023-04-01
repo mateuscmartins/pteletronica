@@ -29,6 +29,11 @@ h2{
     margin-left: 10px;
 }
 
+.conteudo-central{
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
 .conteudo-direita{
     margin-right: 10px;
 }
@@ -72,15 +77,22 @@ input[type="date"]{
     border-radius: 5px;
 }
 
-#riscos{
+#riscos, #perigos{
     padding-top: 25px;
 }
 
-#riscos label{
+#riscos label, #perigos label, #epi label{
     font-size: 24px;
 }
 
-#riscos input[type="checkbox"]{
+#riscos input[type="checkbox"], #perigos input[type="checkbox"], #epi input[type="checkbox"]{
     width: 20px;
     height: 20px;
+}
+
+#perigos, #epi {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 25px;
 }
