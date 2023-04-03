@@ -73,6 +73,16 @@ export default function NovaPT() {
                         </section>
                 </fieldset>
 
+                <h2>Profissionais liberados para a Ordem de Serviço</h2>
+                <fieldset>
+                    <div className='dados-profissionais'>
+                        <label className='legenda-profissional'>Matrícula</label>
+                        <input type="text" className='matricula-profissional' required></input>
+                        <label className='legenda-profissional' >Nome</label>
+                        <input type="text" className='nome-profissional' required></input>
+                        <button>Adicionar profissional</button>
+                    </div>
+                </fieldset>
 
                 <h2>Riscos Envolvidos</h2>
                 <fieldset className='content' id='riscos'>
@@ -175,7 +185,7 @@ export default function NovaPT() {
                     </section>       
                 </fieldset>
 
-                <h2>Equipamentos de Proteção Individual Necessários</h2>
+                <h2>Equipamentos de Proteção Individual/Coletivo Necessários</h2>
                 <fieldset className='content' id='epi'>
                     <section className='conteudo-esquerda'>
                         <input type="checkbox" value="oculos-incolor"/>
@@ -280,6 +290,114 @@ export default function NovaPT() {
                         <input type="text"></input>                    
                     </section>       
                 </fieldset>
+
+                <h2>Medidas Preventivas</h2>
+                <fieldset className='content' id='medidas-preventivas'>
+                    <section className='conteudo-esquerda'>
+                        <input type="checkbox" value="analisar-ambiente"/>
+                        <label for="analisar-ambiente" > Analisar o ambiente antes de iniciar o trabalho </label><br></br>
+                        <input type="checkbox" value="manter-isolamento-sinalizacao"/>
+                        <label for="manter-isolamento-sinalizacao" > Manter área sinalizada ou isolada </label><br></br>
+                        <input type="checkbox" value="informar-arredores"/>
+                        <label for="informar-arredores" > Informar pessoal da área ou arredores </label><br></br>
+                        <input type="checkbox" value="colocar-anteparos"/>
+                        <label for="colocar-anteparos" > Colocar anteparos/tapumes </label><br></br>
+                        <input type="checkbox" value="escavacao-escorada"/>
+                        <label for="escavacao-escorada" > Manter escavação devidamente escorada/tapumes </label><br></br>
+                        <input type="checkbox" value="ferramentas-boas-condicoes"/>
+                        <label for="ferramentas-boas-condicoes" > Manter ferramentas em boas condições de conservação </label><br></br>
+                        <input type="checkbox" value="desenergizar-rede"/>
+                        <label for="desenergizar-rede" > Desenergizar as redes elétricas </label><br></br>
+                        <input type="checkbox" value="sinalizar-eqtos-eletricos"/>
+                        <label for="sinalizar-eqtos-eletricos" > Sinalizar equipamentos elétricos com cartões/cadeados/chaves </label><br></br>
+                        <input type="checkbox" value="delisgamento-energia"/>
+                        <label for="delisgamento-energia" > Trabalhador que realizará desligamento e/ou ligação da parte elétrica deve estar legalmente habilitado </label><br></br>
+                        <input type="checkbox" value="nr-10"/>
+                        <label for="nr-10" > Atender NR-10 </label><br></br>
+                        <input type="checkbox" value="cuidados-partes-eletricas"/>
+                        <label for="cuidados-partes-eletricas" > Cuidados com parte elétrica, cabos e extensões </label><br></br>
+                        <input type="checkbox" value="iluminacao-a-prova-explosao"/>
+                        <label for="iluminacao-a-prova-explosao" > Utilizar iluminação à prova de explosão </label><br></br>
+                        <input type="checkbox" value="embalar-pecas"/>
+                        <label for="embalar-pecas" > Embalar/amarrar peças para transporte </label><br></br>
+                        <input type="checkbox" value="dispositivos-condicoes-adequadas"/>
+                        <label for="dispositivos-condicoes-adequadas" > Manter dispositivos de movimentação de material em condições adequadas </label><br></br>
+                        <input type="checkbox" value="maos-zona-de-acao"/>
+                        <label for="maos-zona-de-acao" > Afastar as mãos da zona de ação de equipamentos e ferramentas </label><br></br>
+                        <input type="checkbox" value="armazenar-adequadamente"/>
+                        <label for="armazenar-adequadamente" > Armazenar materiais e equipamentos adequadamente </label><br></br>
+                        <input type="checkbox" value="escada-pe-de-borracha"/>
+                        <label for="escada-pe-de-borracha" > Usar escada com pé de borracha/antiderrapante </label><br></br>
+                        <input type="checkbox" value="escada-madeira-fibra"/>
+                        <label for="escada-madeira-fibra" > Usar escada de madeira ou fibra em bom estado </label><br></br>
+                        <input type="checkbox" value="prender-escada"/>
+                        <label for="prender-escada" > Prender escada extensível </label><br></br>
+                    </section> 
+                    <section className='conteudo-central'>
+
+                        <input type="checkbox" value="macarico-oculos-lente-escura"/>
+                        <label for="macarico-oculos-lente-escura" > No uso de maçarico, utilizar óculos com lente escura </label><br></br>
+                        <input type="checkbox" value="valvula-eqto-solda"/>
+                        <label for="valvula-eqto-solda" > Equipamento de solda com válvula contra retrocesso de chama </label><br></br>
+                        <input type="checkbox" value="fogo-afastado-inflamaveis"/>
+                        <label for="fogo-afastado-inflamaveis" > Manter fogo e/ou faíscas afastados de inflamáveis </label><br></br>
+                        <input type="checkbox" value="acender-macarico-acendedor"/>
+                        <label for="acender-macarico-acendedor" > Acender maçarico somente com acendedor de maçarico </label><br></br>
+                        <input type="checkbox" value="cilindros-vertical"/>
+                        <label for="cilindros-vertical" > Mannter cilindros de gás na vertical, amarrados, em local seguro, afastados de combustíveis </label><br></br>
+                        <input type="checkbox" value="defesa-interna"/>
+                        <label for="defesa-interna" > Acompanhamento defesa interna em tempo integral </label><br></br>
+                        <input type="checkbox" value="proteger-inflamaveis"/>
+                        <label for="proteger-inflamaveis" > Proteger líquidos inflamáveis e materiais combustíveis </label><br></br>
+                        <input type="checkbox" value="condutor-habilitado"/>
+                        <label for="condutor-habilitado" > Condutor/operador de veículo deve estar habilitado </label><br></br>
+                        <input type="checkbox" value="velocidade-adequada"/>
+                        <label for="velocidade-adequada" > Dirigir em velocidade adequada às condições da via </label><br></br>
+                        <input type="checkbox" value="operador-treinado"/>
+                        <label for="operador-treinado" > Operador capacitado e treinado (com certificado) </label><br></br>
+                        <input type="checkbox" value="operador-treinado-trabalho-altura"/>
+                        <label for="operador-treinado-trabalho-altura" > Empregados treinados para trabalhos em altura </label><br></br>
+                        <input type="checkbox" value="linha-de-vida"/>
+                        <label for="linha-de-vida" > Utilizar linha de vida </label><br></br>
+                        <input type="checkbox" value="transporte-seguro-ferramentas"/>
+                        <label for="transporte-seguro-ferramentas" > Manter seguro o transporte de ferramentas e materiais para o topo </label><br></br>
+                        <input type="checkbox" value="verificar-clima"/>
+                        <label for="verificar-clima" > Verificar se condições climáticas são favoráveis para trabalho em altura em área externa. </label><br></br>
+
+                    </section> 
+                    <section className='conteudo-direita'>
+                        <input type="checkbox" value="transito-sob-carga-suspensa"/>
+                        <label for="transito-sob-carga-suspensa" > Não ficar ou passar embaixo de cargas suspensas </label><br></br>
+                        <input type="checkbox" value="andaime-com-pessoas"/>
+                        <label for="andaime-com-pessoas" > Não movimentar andaimes com pessoas em cima </label><br></br>
+                        <input type="checkbox" value="ancorar-andaime"/>
+                        <label for="ancorar-andaime" > Ancorar andaime sempre </label><br></br>
+                        <input type="checkbox" value="uso-de-guarda-corpo"/>
+                        <label for="uso-de-guarda-corpo" > Uso de guarda-corpo e rodapé no andaime </label><br></br>
+                        <input type="checkbox" value="escada-andaime"/>
+                        <label for="escada-andaime" > Colocar escada de acesso no andaime </label><br></br>
+                        <input type="checkbox" value="forracao-andaime"/>
+                        <label for="forracao-andaime" > Andaimes com forração completa </label><br></br>
+                        <input type="checkbox" value="rodas-travadas-andaime"/>
+                        <label for="rodas-travadas-andaime" > Andaimes com rodas e elementos travados </label><br></br>
+                        <input type="checkbox" value="diagonal-andaime"/>
+                        <label for="diagonal-andaime" > Colocar diagonais no andaime para evitar torção </label><br></br>
+                        <input type="checkbox" value="desenergizar-proximo-andaime"/>
+                        <label for="desenergizar-proximo-andaime" > Desenergizar rede elétrica, tubulações, etc. próximas ao andaime </label><br></br>
+                        <input type="checkbox" value="pta-instalacoes-energizadas"/>
+                        <label for="pta-instalacoes-energizadas" > Não utilizar PTA para instalações energizadas </label><br></br>
+                        <input type="checkbox" value="tubulacoes-isoladas"/>
+                        <label for="tubulacoes-isoladas" > Tubulações e redes devem ser desligadas e isoladas </label><br></br>
+                        <input type="checkbox" value="armazenar-inflamavel"/>
+                        <label for="armazenar-inflamavel" > Armazenar inflamáveis em local adequado </label><br></br>
+                        <label>Outro: </label><br></br>
+                        <input type="text"></input>                    
+                    </section>       
+                </fieldset>
+                <div className='botao-emissao'>
+                    <button type="submit">Emitir Permissão de Trabalho</button>
+                </div>
+                
             </form>
             
 

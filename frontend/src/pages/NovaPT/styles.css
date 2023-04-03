@@ -49,6 +49,37 @@ h2{
     grid-template-columns: 1fr 1fr;
 }
 
+
+.dados-profissionais{
+    padding-top: 25px;
+}
+
+.dados-profissionais button{
+    display: block;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.dados-profissionais input[type=text]{
+    height: 40px;
+    color: #333;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0 8px;
+    margin-bottom: 5px;
+}
+
+.dados-profissionais .matricula-profissional{
+    width: 10%;
+    margin-right: 10px;
+}
+
+.dados-profissionais .legenda-profissional{
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
 input[type=text] {
     width: 70%;
     height: 40px;
@@ -77,22 +108,45 @@ input[type="date"]{
     border-radius: 5px;
 }
 
-#riscos, #perigos{
+#riscos, #perigos, #epi, #medidas-preventivas{
     padding-top: 25px;
 }
 
-#riscos label, #perigos label, #epi label{
+#riscos label, #perigos label, #epi label, #medidas-preventivas label {
     font-size: 24px;
 }
 
-#riscos input[type="checkbox"], #perigos input[type="checkbox"], #epi input[type="checkbox"]{
+#riscos input[type="checkbox"], #perigos input[type="checkbox"], #epi input[type="checkbox"], #medidas-preventivas input[type="checkbox"]{
     width: 20px;
     height: 20px;
 }
 
-#perigos, #epi {
+#perigos, #epi, #medidas-preventivas {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 25px;
+}
+
+
+.botao-emissao{
+    width: 100%;
+}
+
+button{
+    display: block;
+    width: 320px;
+    height: 40px;
+    color: #FFF;
+    background-color: #146C94;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    transition: filter 0.2s;
+    margin: 10px auto;
 }
