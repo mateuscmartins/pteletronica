@@ -14,6 +14,10 @@
     margin-left: auto;
 }
 
+fieldset{
+    border-radius: 8px;
+}
+
 .content {
     width: 100%;
     display: grid;
@@ -51,13 +55,16 @@ h2{
 
 
 .dados-profissionais{
-    padding-top: 25px;
+    padding: 25px 15px 0 15px;
 }
 
-.dados-profissionais button{
-    display: block;
-    margin-left: 10px;
-    margin-top: 15px;
+h3{
+    margin-bottom: 10px;
+    font-size: 28px;    
+}
+
+.dados-profissionais .bloco-profissional, .dados-profissionais hr{
+    margin-bottom: 25px;
 }
 
 .dados-profissionais input[type=text]{
@@ -78,6 +85,13 @@ h2{
     display: inline-block;
     font-size: 24px;
     margin-right: 5px;
+}
+
+.dados-profissionais #botao-adicionar{
+    width: 320px;
+    cursor: pointer;
+    margin-left: 10px;
+
 }
 
 input[type=text] {
@@ -109,33 +123,29 @@ input[type="date"]{
 }
 
 #riscos, #perigos, #epi, #medidas-preventivas{
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #riscos label, #perigos label, #epi label, #medidas-preventivas label {
     font-size: 24px;
+    margin-bottom: 15px;
 }
 
 #riscos input[type="checkbox"], #perigos input[type="checkbox"], #epi input[type="checkbox"], #medidas-preventivas input[type="checkbox"]{
     width: 20px;
     height: 20px;
+    margin-bottom: 15px;
 }
 
 #perigos, #epi, #medidas-preventivas {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 25px;
 }
 
-
-.botao-emissao{
-    width: 100%;
-}
-
-button{
+button, #botao-adicionar{
     display: block;
-    width: 320px;
     height: 40px;
     color: #FFF;
     background-color: #146C94;
@@ -150,3 +160,12 @@ button{
     transition: filter 0.2s;
     margin: 10px auto;
 }
+
+.botao-emissao{
+    width: 100%;
+}
+
+.botao-emissao button{
+    width: 320px;
+}
+

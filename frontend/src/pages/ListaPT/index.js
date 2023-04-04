@@ -27,12 +27,15 @@ export default function ListaPT() {
                 <li>
 
                     <h2>Número da PT</h2>
-                    <p>0001</p>
+                    <p className='id-pt'>0001</p>
                     
+
+                    <p className='status'>Status: <span>Parcialmente aprovada</span></p>
+
                     <h2>Descrição do Serviço</h2>
                     <p>Substituir lâmpada no poste de entrada</p>
                     
-                    <h3>Ordem de serviço</h3>
+                    <h2>Ordem de serviço</h2>
                     <p>123456</p>
 
                     <a href='/exibir-pt'>Visualizar</a>
@@ -41,12 +44,14 @@ export default function ListaPT() {
                 <li>
 
                     <h2>Número da PT</h2>
-                    <p>0001</p>
+                    <p className='id-pt'>0001</p>
                     
+                    <p className='status'>Status: <span>Concluída</span></p>
+
                     <h2>Descrição do Serviço</h2>
                     <p>Substituir lâmpada no poste de entrada</p>
                     
-                    <h3>Ordem de serviço</h3>
+                    <h2>Ordem de serviço</h2>
                     <p>123456</p>
 
                     <a href='/exibir-pt'>Visualizar</a>
@@ -55,12 +60,14 @@ export default function ListaPT() {
                 <li>
 
                     <h2>Número da PT</h2>
-                    <p>0001</p>
+                    <p className='id-pt'>0001</p>
                     
+                    <p className='status'>Status: <span>Aguardando aprovação</span></p>
+
                     <h2>Descrição do Serviço</h2>
                     <p>Substituir lâmpada no poste de entrada</p>
                     
-                    <h3>Ordem de serviço</h3>
+                    <h2>Ordem de serviço</h2>
                     <p>123456</p>
 
                     <a href='/exibir-pt'>Visualizar</a>
@@ -69,12 +76,14 @@ export default function ListaPT() {
                 <li>
 
                     <h2>Número da PT</h2>
-                    <p>0001</p>
+                    <p className='id-pt'>0001</p>
+
+                    <p className='status'>Status: <span>Aprovada</span></p>
                     
                     <h2>Descrição do Serviço</h2>
                     <p>Substituir lâmpada no poste de entrada</p>
                     
-                    <h3>Ordem de serviço</h3>
+                    <h2>Ordem de serviço</h2>
                     <p>123456</p>
 
                     <a href='/exibir-pt'>Visualizar</a>

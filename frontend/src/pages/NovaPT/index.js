@@ -1,8 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './styles.css';
 
 export default function NovaPT() {
+    const [divs, setDivs] = useState([]);
+
+
+    function adicionarCampoUsuario(){
+        setDivs([...divs, 
+            <div className='bloco-profissional'>
+                <label className='legenda-profissional'>Matrícula</label>
+                <input type="text" className='matricula-profissional'></input>
+                <label className='legenda-profissional' >Nome</label>
+                <input type="text" className='nome-profissional'></input>
+            </div>
+        ])
+    };
+
+
     return (
         <div className='container'>
                 <header>
@@ -46,7 +61,7 @@ export default function NovaPT() {
                             </div>
                                 
 
-                            <label className='legenda'>Local do trabalho</label>
+                            <label className='legenda'>Local de execução do serviço</label>
                             <input type="text" placeholder='Ex: Portaria principal' required></input>
                             
 
@@ -60,27 +75,30 @@ export default function NovaPT() {
                                         <label for="area-nao-restrita" > Não </label>
                                     </div>
                                 </div>
-                                <div id='tipo-mo'> 
-                                    <label className='legenda'>Tipo de mão-de-obra</label>
-                                    <div className='mao-de-obra-opcoes'>
-                                        <input type="checkbox" value="interno"/>
-                                        <label for="interna" > Interna </label>
-                                        <input type="checkbox" value="externo"/>
-                                        <label for="externa" > Externa </label>
-                                    </div>
-                                </div>
                             </div>
                         </section>
                 </fieldset>
 
-                <h2>Profissionais liberados para a Ordem de Serviço</h2>
+                <h2>Profissionais Autorizados a Executar a Ordem de Serviço</h2>
                 <fieldset>
                     <div className='dados-profissionais'>
-                        <label className='legenda-profissional'>Matrícula</label>
-                        <input type="text" className='matricula-profissional' required></input>
-                        <label className='legenda-profissional' >Nome</label>
-                        <input type="text" className='nome-profissional' required></input>
-                        <button>Adicionar profissional</button>
+                        <h3>Encarregado</h3>
+                        <div className='bloco-profissional'> 
+                            <label className='legenda-profissional'>Matrícula</label>
+                            <input type="text" className='matricula-profissional' required></input>
+                            <label className='legenda-profissional' >Nome</label>
+                            <input type="text" className='nome-profissional' required></input>
+                        </div>
+                        <hr></hr>
+                        <h3>Profissional de manutenção</h3>
+                        <div className='bloco-profissional'>
+                            <label className='legenda-profissional'>Matrícula</label>
+                            <input type="text" className='matricula-profissional' required></input>
+                            <label className='legenda-profissional' >Nome</label>
+                            <input type="text" className='nome-profissional' required></input>
+                        </div>
+                        {divs.map((div, index) => (<div key={index}>{div}</div>))}
+                        <div id="botao-adicionar" onClick={adicionarCampoUsuario}> <p> Adicionar profissional</p> </div>
                     </div>
                 </fieldset>
 
@@ -344,7 +362,7 @@ export default function NovaPT() {
                         <input type="checkbox" value="acender-macarico-acendedor"/>
                         <label for="acender-macarico-acendedor" > Acender maçarico somente com acendedor de maçarico </label><br></br>
                         <input type="checkbox" value="cilindros-vertical"/>
-                        <label for="cilindros-vertical" > Mannter cilindros de gás na vertical, amarrados, em local seguro, afastados de combustíveis </label><br></br>
+                        <label for="cilindros-vertical" > Manter cilindros de gás na vertical, amarrados, em local seguro, afastados de combustíveis </label><br></br>
                         <input type="checkbox" value="defesa-interna"/>
                         <label for="defesa-interna" > Acompanhamento defesa interna em tempo integral </label><br></br>
                         <input type="checkbox" value="proteger-inflamaveis"/>
